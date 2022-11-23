@@ -10,8 +10,8 @@
 
 <body>
   <div class="container">
-    <h1>Products</h1>
-    <% products.map((product)=>{ %>
+    <h1>Product details</h1>
+
       <h3>
         <a href="/products/<%=product.id%>">
           <%=product.productTiltle%>
@@ -20,8 +20,9 @@
       <p>
         <%=product.productDescribtion%>
       </p>
+      <p>ราคา <%=product.price%> บาท</p>
+      <a href="/products">ย้อนกลับ</a>
 
-      <% }) %>
   </div>
 
 </body>
